@@ -1,49 +1,30 @@
 <!DOCTYPE html>
-
 <html>
-
 <head>
-	<link rel="stylesheet" href="styles.css">
+  <title>Feedback Form</title>
 </head>
-
 <body>
-	
-<h2>Feedback Form</h2>
-
-<form action="#" method="POST">
-  <div>
+  <h1>Feedback Form</h1>
+  <form action="#" method="post">
     <label for="name">Name:</label>
     <input type="text" id="name" name="name" minlength="3" maxlength="50" required>
-  </div>
-
-  <div>
+    <br>
     <label for="portfolio">Portfolio:</label>
     <input type="url" id="portfolio" name="portfolio" required>
-  </div>
-
-  <div>
+    <br>
     <label for="favColor">Favorite Color:</label>
     <select id="favColor" name="favColor">
       <option value="red">Red</option>
-      <option value="blue">Blue</option>
       <option value="green">Green</option>
+      <option value="blue">Blue</option>
       <option value="yellow">Yellow</option>
+      <option value="other">Other</option>
     </select>
-  </div>
-
-  <div>
+    <br>
     <label for="likeness">Likeness:</label>
     <input type="range" id="likeness" name="likeness" min="1" max="100">
-  </div>
-
-  <button type="submit">Submit</button>
-</form>
-
-
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
-
+    <br>
+    <input type="submit" value="Submit">
+  </form>
 </body>
-
 </html>
